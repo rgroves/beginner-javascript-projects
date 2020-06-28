@@ -12,3 +12,4 @@ It is best to build out these projects in the order listed below.
 - [Hello World Alert Project](.\hello-world-alert)
 - [Hello World DOM Project](.\hello-world-dom)
 - [Color Flip Project](.\color-flip)
+- [Color Step Project](.\color-step)
