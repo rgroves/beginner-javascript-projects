@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hello World Alert Example</title>
+</head>
+
+<body>
+  <h1>The alert() & prompt() methods block the user from interacting with a web page.</h1>
+  <h2>You typically will not want to use these methods, but for our learning purposes it's fine.</h2>
+  <script>
+    /* This is an example of inline JavaScript.
+       One of your objectives is to take the code below, remove all of this 
+       inline script, and make it an external file. 
+    */
+
+    /* You should get in the habit of using strict mode.
+       This mode alerts you to when you might be using bad practices and will
+       alert you to some errors that are normally treated as "silent" errors
+       (i.e. errors that the JavaScript engine would not normally alert for).
+
+       To put an entire script into strict mode you must include the following 
+       string as the first (non-comment) statement of your script: "use strict";
+    */
+    "use strict";
+
+    // Here the let keyword is used to declare a variable named userName.
+    let userName;
+
+    // Log the value of the userName variable.
+    console.log("The value of userName is: " + userName);
+
+    // Assign the userName variable a string value.
+    userName = "World";
+
+    // Declare and initialize the message variable with a concatenated string value.
+    let message = "Hello " + userName + "!";
+
+    // Create the alert to the user.
+    window.alert(message);
+  </script>
+</body>
+
+</html>

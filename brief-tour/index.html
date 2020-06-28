@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <title>A Brief Tour of JavaScript</title>
+  <style>
+    .code-text {
+      margin-top: 1em;
+      color: #e83e8c;
+    }
+
+  </style>
+</head>
+
+<body class="m-5">
+  <h1>A Brief Tour of JavaScript Using The Developer Tools Console</h1>
+  <p>This project is more an exploration of some of the basics you'll need to familiarize yourself with in order to
+    build out the other projects in the series.</p>
+  <p>You will not need any files for this project, instead you'll be using the browser's Developer Tools console to
+    complete this exploration.</p>
+  <p>The instructions listed here will be for Chrome, but should be similar in other browsers. You can access Developer
+    Tools in most browsers by pressing F12. A couple of exceptions are as follows:</p>
+
+  <ul>
+    <li>Chrome for Mac uses <kbd>Cmd+Opt+J</kbd></li>
+    <li>Safari uses <kbd>Cmd+Opt+C</kbd>
+      <ul>
+        <li>In Safari you must enable the Developer Console first</li>
+        <li>Go into Preferences and under the Advanced tab check the box labeled "Show develop menu in menu bar"</li>
+      </ul>
+    </li>
+  </ul>
+
+  <h2>Objectives</h2>
+
+  <h3>Use JavaScript Do Some Math (Don't Worry Not A Lot)</h3>
+
+  <ul>
+    <li><input type="checkbox" /> Open Developer Tools in your browser and find and navigate to the Console tab.</li>
+    <li><input type="checkbox" /> Inside the Console you'll see a <samp>&gt;</samp> (greater than) symbol; this is the
+      prompt where you will type in JavaScript code during this exploration.</li>
+    <li><input type="checkbox" /> After typing in some JavaScript you will need to hit enter to indicate that you have
+      finished typing your code and submit it to be evaluated.</li>
+    <li><input type="checkbox" /> The code you submit will be evaluated (i.e. executed/ran) by the browser's JavaScript
+      engine and will return a result of some kind.</li>
+    <li><input type="checkbox" /> At the prompt type in the following and hit enter:
+      <pre class="code-text"><code>10 + 4</code></pre>
+    </li>
+    <li><input type="checkbox" /> You should see <samp>&lt;- 14</samp> currently above the prompt. The symbol
+      <samp>&lt;-</samp> means that what follows is the result of evaluating the previously entered JavaScript.</li>
+    <li><input type="checkbox" /> Try entering a few more mathematical expressions:
+      <ul>
+        <li><input type="checkbox" /> Exponentiation:
+          <pre class="code-text"><code>10 ** 4</code></pre>
+        </li>
+        <li><input type="checkbox" /> Multiplication:
+          <pre class="code-text"><code>10 * 4</code></pre>
+        </li>
+        <li><input type="checkbox" /> Division:
+          <pre class="code-text"><code>10 / 4</code></pre>
+        </li>
+        <li><input type="checkbox" /> Remainder:
+          <pre class="code-text"><code>10 % 4</code></pre>
+        </li>
+        <li><input type="checkbox" /> Addition:
+          <pre class="code-text"><code>10 + 4</code></pre>
+        </li>
+        <li><input type="checkbox" /> Subtraction:
+          <pre class="code-text"><code>10 - 4</code></pre>
+        </li>
+      </ul>
+    </li>
+    <li><input type="checkbox" /> Here you are working with literal data (meaning the data just as you typed it) and
+      performing mathematical operations with that data.</li>
+    <li><input type="checkbox" /> From a very simplistic point of view, the purpose of a program is to take some data
+      and inspect it, transform it, and/or perform actions based upon it.</li>
+    <li><input type="checkbox" /> Using JavaScript as a basic calculator is like hammering a nail with a jackhammer.
+      This isn't useful unless results can be stored and manipulated further. We do this with variables.</li>
+  </ul>
+
+  <h3>Learn About Variables</h3>
+
+  <ul>
+    <li><input type="checkbox" /> Declare a variable named <code>myNumber</code> using the <code>let</code> keyword:
+      <pre class="code-text"><code>let myNumber;</code></pre>
+    </li>
+    <li><input type="checkbox" /> Assign <code>myNumber</code> a value using the <code>=</code> (the assignment
+      operator):
+      <pre class="code-text"><code>myNumber = 10;</code></pre>
+    </li>
+    <li><input type="checkbox" /> You can declare and assign a value in one step as well:
+      <pre class="code-text"><code>let myNumber = 10;</code></pre>
+    </li>
+    <li><input type="checkbox" /> Type the variable name <code>myNumber</code> into the console and hit enter. You'll
+      see that this evaluates to the value the variable was assigned.</li>
+    <li><input type="checkbox" /> A variable's value can be changed any time in your code. Assign a different value to
+      the <code>myNumber</code> variable:
+      <pre class="code-text"><code>myNumber = 4;</code></pre>
+    </li>
+  </ul>
+
+  <h3>Learn About Data Types</h3>
+
+  <ul>
+    <li><input type="checkbox" /> So far we've been working with values that have a data type of Number. Variables may
+      hold values that have different data types. Try declaring and initializing variables of the following types in the
+      console (use the Example column as a guide) and examine their values as you did with <code>myNumber</code> above:
+      <table class="table-sm table-striped">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Type</th>
+            <th>Description</th>
+            <th class="w-50">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td>String</td>
+            <td>A sequence of text enclosed in single or double quotes.</td>
+            <td><code>let myString = "Hello";</code></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td>Number</td>
+            <td>Numbers don't have quotes around them.</td>
+            <td><code>let myNumber = 42;</code></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td>Boolean</td>
+            <td>A true or false value. The keywords <code>true</code> and <code>false</code> are special keywords that
+              shouldn't have quotes around them.</td>
+            <td><code>let myBoolean = true;</code></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td>Array</td>
+            <td>A data structure that can store multiple values as a series of elements in a single reference.</td>
+            <td><code>let myArray = ["Hello", 42, true, 0, "Goodbye"];</code></td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" /></td>
+            <td>Object</td>
+            <td>This can be anything. <em>Everything in JavaScript is an object.</em> This is a key thing to keep in
+              mind as you are learning JavaScript. An object can be initialized using a comma-delimited list of zero or
+              more pairs of property names and associated values, enclosed in curly braces.</td>
+            <td><code>let myObject = { "Greeting": "Hello", "Value": "7"};</code></td>
+          </tr>
+        </tbody>
+      </table>
+    </li>
+    <li><input type="checkbox" /> Another important note to keep in mind: Mixing different types of data when performing
+      calculations can sometimes lead to unexpected results. Try the code below and see what happens:
+      <pre class="code-text"><code>30 + "5"</code></pre>
+    </li>
+  </ul>
+
+  <h3>Learn About Comments</h3>
+
+  <ul>
+    <li><input type="checkbox" /> Comments can be added to code to add notes to yourself or other developers. Comments
+      are ignored and are not treated as code. Begin a single-line comment with two forward slashes followed by your
+      comment text:
+      <pre class="code-text"><code>// This is a comment</code></pre>
+    </li>
+    <li><input type="checkbox" /> Multi-line comments can also be used. These start with a forward slash followed by an
+      asterisk, then the comment text which can have line breaks in it, and then end with an asterisks followed by a
+      forward slash:
+      <pre class="code-text"><code>/* This comment 
+   has three
+   lines of text */
+    </code></pre>
+    </li>
+  </ul>
+
+  <h3>Learn About Conditional Statments</h3>
+
+  <p>Conditional statements are used to execute certain code based on when an expression evaluates to true or false.</p>
+
+  <h4>The <em>if...else</em> Statement</h4>
+  <p>An if...else statement allows you to execute different code based upon a conditional test. In the example below, if
+    the value of <code>myNumber</code> is greater than 10 then the first code block will be run, which adds 100 to
+    myNumber. If the value of <code>myNumber</code> is not greater than 10 then the second code block will be run, which
+    multiplies <code>myNumber</code> by 10. Only one of these code blocks will be run based upon the result of the
+    conditional test.</p>
+  <pre class="code-text"><code>
+    if (myNumber &gt; 10) {
+      myNumber = myNumber + 100;
+    } else {
+      myNumber = myNumber * 10;
+    }
+  </code></pre>
+
+  <h3>Learn About Loops</h3>
+
+  <h4>The <em>while</em> Loop</h4>
+
+  <p>A while loop may execute a block of code multiple times as long as the conditional test specified evaluates to
+    true. If the conditional test evaluates to false, the code block will not be run and execution of the program
+    continues to the next statement after the while loop.</p>
+  <p>In the example below, if <code>myNumber</code> is not greater than 10, then the code inside the while loop code
+    block will not be executed. If the value of <code>myNumber</code> is greater than 10, the code block will execute
+    and subtract 5 from <code>myNumber</code>. After, the condition is evaluated again and if still true will execute
+    the code block again. This continues until the condition evaluates to false, at which point the program will
+    continue with the next statement after the while loop.</p>
+  <pre class="code-text"><code>
+    while (myNumber &gt; 10) {
+      myNumber = myNumber - 5;
+    }
+  </code></pre>
+
+  <h4>The <em>do...while</em> Loop</h4>
+
+  <p>A do...while loop is similar to a while loop, with the exception that the code block will always execute at least
+    once, then the condition will be tested and if true will continue to run the code block over and over until the
+    condition evaluates to false.</p>
+  <p>In the example below, the code block is executed once, subtracting 5 from <code>myNumber</code>. After the block
+    runs, the condition is tested and if true, the code block will execute again and subtract 5 from
+    <code>myNumber</code>. This continues until the the condition evaluates to false, at which point the program will
+    continue with the next statement after the do...while loop.</p>
+  <pre class="code-text"><code>
+    do  {
+      myNumber = myNumber - 5;
+    } while (myNumber &gt; 10);
+  </code></pre>
+
+  <h4>The <em>for</em> Loop</h4>
+
+  <p>A for loop looks different from a while or do...while loop. Inside the parenthesis, there are three distinct parts.
+    We'll use the example shown below to discuss these.</p>
+  <pre class="code-text"><code>
+      for (let i = 1; i &lt;= 3; i++)  {
+        myNumber = myNumber + 5;
+      };
+    </code></pre>
+  <ul>
+    <li>The first part is an initialization, this is the <code>let i = 1;</code> part. This lets you setup a variable
+      that
+      can be used in the conditional test. The initialization runs first when the loop executes.</li>
+    <li>The next part is the conditional test: <code>i &lt;= 3</code>. The result of this test determines if the for
+      loop's
+      code block will be executed, just like with the while and do...while loop.</li>
+    <li>The last part, <code>i++</code>, is code that executes after each execution of the for loop's code block.</li>
+  </ul>
+
+  <p>To put it all together, this is what happens with the for loop above. The variable <code>i</code> is declared and
+    assigned a value of 1. The condition <code>i &lt;= 3</code> is evaluated and since <code>i</code> currently has a
+    value of 1, and 1 is less than or equal to 3, the condition evaluates to true. This means that the for loop's code
+    block will run, which will add 5 to
+    <code>myNumber</code>. When the end of the code block is reached, the <code>i++</code> part of the for loop is
+    executed which adds 1 to <code>i</code> making it's value 2. At this point the condition is tested again and since
+    it is still true (2 is less than or equal to 3) the code block is executed again. This continues as described above
+    until the value of <code>i</code> becomes 4, at which point the condition is no longer true and the program
+    continues with the next statement after the for loop.
+  </p>
+
+  <h3>Learn About Functions</h3>
+
+  <p>Functions allow you to package up some code that you can then reuse by calling the function instead of having to
+    write the code over and over again when you need to use it. A function needs to be declared, like a variable. You
+    do this with the <code>function</code> keyword followed by the function name. You can pass in values to a function
+    so that you can use those values within the function's code, these values are called <em>arguments</em>. To define
+    arguments, specify a name for each argument after the function name inside of parenthesis. If your function has no
+    arguments you leave the inside of the parenthesis empty. After the arguments you specify a code block, which is any
+    code you wish to execute inside of curly braces. Inside of your code block, you can use the <code>return</code>
+    statement to return a value from your function. If you do not supply a return statement, the function will
+    return<code>undefined</code>, which is the default value when there is not an explicit return value.</p>
+  <pre class="code-text"><code>
+      // Declare a function named add that accepts two arguments.
+      // The first argument is named number1. The second argument is named number2.
+      function add(number1, number2) {
+        // The function will add number1 and number2 together and store the result.
+        let result = number1 + number2;
+
+        // The function then returns the stored result.
+        return result;
+      }
+      
+      // Call the add function, passing in the following values: 
+      // 10 for number1 and 5 for number2. Store the value returned from the 
+      // function in newNumber.
+      let newNumber = add(10, 5);
+
+      // After the previous line is executed, newNumber's value will be 15.
+    </code></pre>
+
+  <h3>Learn About Useful Objects</h3>
+
+  <p>There are many useful pre-existing objects available to you in JavaScript. Listed below are a couple of them.</p>
+  <p>You can access properties of an object. Properites may be data values or methods (a method is just some packaged
+    functionality that you can call, exactly like a function). You access an object's data and methods using the <em>dot
+      operator</em>, which is just a <code>.</code> that comes after the object name and before the property name.
+    You'll see examples below to help make this clear.</p>
+
+  <h4>The <em>console</em> Object</h4>
+
+  <p>The console object allows you to interact with and send information to the browser's Developer Tools Console.
+    Covered below is one of the most common methods used with the console object.</p>
+
+  <ul>
+    <li><input type="checkbox" /> Use the log method that is available on the console object to log a message to the
+      console. Try this in the console:
+      <pre class="code-text"><code>console.log("This is my message to be logged");</code></pre>
+    </li>
+  </ul>
+
+  <h4>The <em>window</em> Object</h4>
+
+  <p>The window object is the default global object when running JavaScript in the browser. You will learn more about
+    this object as you start to learn more about JavaScript, for now we'll look at one method available on the window
+    object.</p>
+
+  <ul>
+    <li><input type="checkbox" /> Use the alert method that is available on the window object to cause a dialog box to
+      pop-up and alert the user:
+      <pre class="code-text"><code>window.alert("This is my message to alert the user.");</code></pre>
+    </li>
+  </ul>
+
+</body>
+
+</html>
