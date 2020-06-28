@@ -13,3 +13,4 @@ It is best to build out these projects in the order listed below.
 - [Hello World DOM Project](.\hello-world-dom)
 - [Color Flip Project](.\color-flip)
 - [Color Step Project](.\color-step)
+- [Color Randomizer Project](.\color-randomizer)
