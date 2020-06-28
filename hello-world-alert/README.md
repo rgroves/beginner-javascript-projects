@@ -16,7 +16,7 @@
 - [_] Go read about the `window.prompt` method to understand what it does and how to use it  
    https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt
 
-- [_] Instead of assigning a string literal to `userName` use prompt to ask the user for their name and assign their input to `userName`. When finished refresh the page to make sure it still works as it did when you first opened it.
+- [_] Instead of assigning a string literal to `userName` use prompt to ask the user for their name and assign their input to `userName`. When finished refresh the page to make sure your changes work without throwing any errors in the Developer Tools Console.
 
 # Dive Deeper
 
