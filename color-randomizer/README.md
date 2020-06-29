@@ -40,7 +40,7 @@
 
 Listed below are items for further exploration.
 
-- [_] Read through the Math.random documentation comletely, there are good examples of various common ways this method is used  
+- [_] Read through the Math.random documentation completely, there are good examples of various common ways this method is used  
   https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 
 - [_] Read about the `Math` object and the various methods it makes available  
