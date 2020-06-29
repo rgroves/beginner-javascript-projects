@@ -8,9 +8,9 @@ All of these projects are meant to teach some aspect of client-side (within the 
 
 It is best to build out these projects in the order listed below.
 
-- [A Brief Tour of JavaScript Using The Developer Tools Console](.\brief-tour)
-- [Hello World Alert Project](.\hello-world-alert)
-- [Hello World DOM Project](.\hello-world-dom)
-- [Color Flip Project](.\color-flip)
-- [Color Step Project](.\color-step)
-- [Color Randomizer Project](.\color-randomizer)
+- [A Brief Tour of JavaScript Using The Developer Tools Console](brief-tour)
+- [Hello World Alert Project](hello-world-alert)
+- [Hello World DOM Project](hello-world-dom)
+- [Color Flip Project](color-flip)
+- [Color Step Project](color-step)
+- [Color Randomizer Project](color-randomizer)
