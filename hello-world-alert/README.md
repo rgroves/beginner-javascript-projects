@@ -1,4 +1,4 @@
-# Hellow World Alert Project
+# Hello World Alert Project
 
 # Objectives
 
