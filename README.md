@@ -14,3 +14,4 @@ It is best to build out these projects in the order listed below.
 - [Color Flip Project](color-flip)
 - [Color Step Project](color-step)
 - [Color Randomizer Project](color-randomizer)
+- [Hello World DOM Revisited Project](hello-world-dom-revisited)
