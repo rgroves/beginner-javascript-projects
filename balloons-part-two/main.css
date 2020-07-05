@@ -1,0 +1,99 @@
+body {
+  min-width: 200px;
+}
+
+#baloons {
+  position: relative;
+}
+
+.balloon {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0.25em;
+  border-radius: 50%;
+  box-shadow: inset 1em -1em 0.5em rgba(0, 0, 0, 0.1),
+    -0.25em 0.25em rgba(0, 0, 0, 0.25);
+  background-color: lightgray;
+  margin: 0.5em;
+}
+
+.balloon:after {
+  position: absolute;
+  bottom: -15px;
+  right: 35px;
+  width: 20px;
+  height: 15px;
+  content: " ";
+  transform: rotate(-45deg);
+  box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.5), inset -1px -1px 5px white;
+  border-bottom-left-radius: 100%;
+  border-bottom-right-radius: 10%;
+  background-color: inherit;
+}
+
+.over-inflate {
+  transform: scale(1.5);
+  transition: all 1.5s;
+}
+
+.deflate {
+  transform: scale(0.25);
+  transition: all 1.5s;
+}
+
+.deflate:after {
+  content: " ";
+  width: 0;
+  height: 0;
+}
+
+.pop:before {
+  content: " ";
+  animation: explode 0.2s forwards ease-in-out;
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+}
+
+.pop:after {
+  animation: pop 0.65s forwards ease-in-out;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  top: 0.5em;
+  bottom: 0;
+  right: 0;
+  content: "POP!";
+  text-shadow: 2px 2px 5px lightslategray;
+  font-size: 3em;
+  border-radius: 75%;
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes explode {
+  0% {
+    border: 50px dotted white;
+  }
+  99% {
+    border: 0px dotted lightgray;
+  }
+  100% {
+    background-color: white;
+    border: none;
+    text-shadow: none;
+    box-shadow: none;
+  }
+}

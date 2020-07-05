@@ -16,3 +16,4 @@ It is best to build out these projects in the order listed below.
 - [Color Randomizer Project](color-randomizer)
 - [Hello World DOM Revisited Project](hello-world-dom-revisited)
 - [Balloons-Part-One](balloons-part-one)
+- [Balloons-Part-Two](balloons-part-two)
